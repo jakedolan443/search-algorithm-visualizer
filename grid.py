@@ -1,5 +1,5 @@
 import tkinter as tk
-from random import choice
+import random
 
 
 class Grid(tk.Canvas):
