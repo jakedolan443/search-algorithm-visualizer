@@ -47,7 +47,7 @@ class Mainframe(tk.Frame):
         separation = tk.Label(menuframe, text="\n")
         separation.pack(fill='x')
         
-        optionList = ('Dijkstra', 'Astar', 'Bellman-Ford')
+        optionList = ('Dijkstra', 'Astar')
         self.v = tk.StringVar()
         self.v.set(optionList[0])
         self.v.trace("w", self.set_alg)
@@ -120,7 +120,7 @@ class Mainframe(tk.Frame):
         grid = "{}///\n{}".format(metadata, grid)
 
         f = filedialog.asksaveasfile(mode='wb', defaultextension="*.visgrid", initialdir="templates/", filetypes=[('Search Algorithm Grid File','*.visgrid')])
-        if f is None: # asksaveasfile return `None` if dialog closed with "cancel".
+        if f is None: 
             return
         f.write(grid.encode())
         f.close() 
