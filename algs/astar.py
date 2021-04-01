@@ -40,10 +40,8 @@ def astar(canvas, array, start, goal):
                     if array[neighbour[0]][neighbour[1]] == 1:
                         continue
                 else:
-                    # array bound y walls
                     continue
             else:
-                # array bound x walls
                 continue
 
             if neighbour in close_set and temp_g_score >= gscore.get(neighbour, 0):
