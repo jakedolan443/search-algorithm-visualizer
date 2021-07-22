@@ -4,7 +4,7 @@ Search Algorithm Visualizer built using the Tk GUI toolkit and python3.
 ![Alt Text](https://i.imgur.com/pgIavqx.gif)
 
 # Usage
-This project was written with pure python3 with no external modules, only tkinter is needed. Tkinter is a cross platform module, so there should be no compatabaility issues.
+This project was written with pure python, only tkinter is needed. Tkinter is a cross platform module, so there should be no compatibility issues.
 Tested on Debian 10, Ubuntu 18.04
 
     git clone https://github.com/jakedolan443/search-algorithm-visualizer
